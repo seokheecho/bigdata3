@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bitcamp.bigdata3.app01.MainXActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="로그인"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tvLogin"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="이메일" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tvEmail"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tvEmail"
+            android:layout_alignTop="@+id/etPassword"
+            android:gravity="right"
+            android:text="암호" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/etEmail"
+            android:layout_below="@id/etEmail"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/cbSaveEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/etPassword"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="10dp"
+            android:text="이메일 저장" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbSaveEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="로그인" />
+
+    </RelativeLayout>
+</RelativeLayout>
